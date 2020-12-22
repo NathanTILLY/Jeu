@@ -173,11 +173,11 @@
 					<img class ="guerrier" src="sprites/Guerrier.gif">
 				</div>
 				<div class="col-sm-3">
-					<img class ="boss1" id="boss1" src="sprites/boss.gif">
+					<img class ="boss1" id="boss1" src="sprites/boss.gif"  onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss1'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss1'));">
 				</div>
 				<div class="col-sm-3">
 					
-					<img class ="boss2" id="boss2" src="sprites/boss2.gif">
+					<img class ="boss2" id="boss2" src="sprites/boss2.gif" onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss2'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss2'));">
 			
 				</div>
 			</div>
@@ -195,12 +195,59 @@
 					<img class ="assassin" src="sprites/Assassin.gif">
 				</div>
 				<div class="col-sm-6">
-					<img class ="boss3" id="boss3" src="sprites/boss3.gif">
+					<img class ="boss3" id="boss3" src="sprites/boss3.gif"  onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss3'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss3'));">
 				</div>
 			</div>
 		</div>
 		
+		<div class="infobulle ">
+			<div class="infobulle-fafnir bg-danger" id="infobulleBoss1" style="display: none;"  > <!--  style="display: none;" -->
+				<div class="container ">
+					<div class="row ">
+						<div class="col"><h6>Fafnir </h6> </div>
+						<div class="col"><h6>Lvl : 30 </h6> </div>
+					</div>
+					<div class="row ">
+						<div class="col"><h6>HP: </h6> </div>
+						<div class="col"><h6>250/250 </h6> </div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="infobulle ">
+			<div class="infobulle-lucia bg-danger" id="infobulleBoss2" style="display: none;"> <!--  style="display: none;" -->
+				<div class="container ">
+					<div class="row ">
+						<div class="col"><h6>Lucia </h6> </div>
+						<div class="col"><h6>Lvl : 35 </h6> </div>
+					</div>
+					<div class="row ">
+						<div class="col"><h6>HP: </h6> </div>
+						<div class="col"><h6>400/400 </h6> </div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="infobulle ">
+			<div class="infobulle-ghisarma bg-danger" id="infobulleBoss3" style="display: none;"> <!--  style="display: none;" -->
+				<div class="container ">
+					<div class="row ">
+						<div class="col"><h6>Ghisarma </h6> </div>
+						<div class="col"><h6>Lvl : 32 </h6> </div>
+					</div>
+					<div class="row ">
+						<div class="col"><h6>HP: </h6> </div>
+						<div class="col"><h6>340/340 </h6> </div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+			
 
 		
 	<script type="text/javascript" src="js/rpg.js"></script>

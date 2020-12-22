@@ -1,9 +1,17 @@
+
+
+function afficher_aide(aide) {
+	if (aide.style.display == "none") aide.style.display = "block";
+	else aide.style.display = "none";
+}
+
+
+
+
+
+
+
 var boss = document.getElementById("boss");
-
-
-
-
-
 var cache = false;
 
 boss.on = function()
