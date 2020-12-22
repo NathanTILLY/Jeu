@@ -1,7 +1,8 @@
 .background1
 {
     background-repeat: no-repeat;
-    background-image:  url(https://image.noelshack.com/fichiers/2020/52/2/1608648496-terrain-combat1.png)
+    
+    background-image: url("https://image.noelshack.com/fichiers/2020/52/2/1608674527-terrain-de-combat3.jpg") /* si background charge pas essayer avec ça : https://image.noelshack.com/fichiers/2020/52/2/1608674527-terrain-de-combat3.jpg*/
     
 }
 .scribwhite
@@ -13,23 +14,49 @@
     opacity: 0.7;
 }
 
-.paladin
+.guerrier
 {
-    
+    margin: 350px 0px 0px 100px;
+    width: 170px;
+	height: 170px;
 }
 .pretresse
 {
-    
+    margin: 0px 100px 100px 0px;
+    width: 170px;
+	height: 170px;
 }
 .assassin
 {
-    
+    margin: 50px 0px 0px 0px;
+    width: 170px;
+	height: 170px;
 }
 .alchimiste
 {
-
+        /*haut droite bas gauche*/
+    margin: 220px 0px 0px 100px;
+    width: 190px;
+	height: 190px;
 }
-.monstre
+.boss1
 {
-    
+    margin: 150px 0px 0px 100px;
+    width: 300px;
+	height: 300px;
+    transform:scaleX(-1);
+}
+.boss2
+{
+    margin: 300px 0px 0px 100px;
+    width: 300px;
+	height: 300px;
+    transform:scaleX(-1);
+}
+.boss3
+{
+    margin: 0px 0px 100px 100px;
+    width: 300px;
+	height: 300px;
+    transform:scaleX(-1);
 }
