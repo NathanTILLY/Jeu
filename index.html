@@ -15,8 +15,8 @@
 							<div class="col"><h6>Lvl : 40 </h6> </div>
 						</div>
 						<div class="row ">
-							<div class="col"><h6>HP: </h6> </div>
-							<div class="col"><h6>45/74 </h6> </div>
+							<div class="col"><h6>PV: </h6> </div>
+							<div class="col"><h6>300/300 </h6> </div>
 							<div class="col"><h6>Mana: </h6></div>
 							<div class="col"><h6>50/50 </h6> </div>
 						</div>
@@ -30,8 +30,8 @@
 							<div class="col"><h6>Lvl : 36 </h6> </div>
 						</div>
 						<div class="row ">
-							<div class="col"><h6>HP: </h6> </div>
-							<div class="col"><h6>50/50 </h6> </div>
+							<div class="col"><h6>PV: </h6> </div>
+							<div class="col"><h6>100/100 </h6> </div>
 							<div class="col"><h6>Mana: </h6></div>
 							<div class="col"><h6>110/110 </h6> </div>
 						</div>
@@ -46,8 +46,8 @@
 							<div class="col"><h6>Lvl : 38 </h6> </div>
 						</div>
 						<div class="row ">
-							<div class="col"><h6>HP: </h6> </div>
-							<div class="col"><h6>45/50 </h6> </div>
+							<div class="col"><h6>PV: </h6> </div>
+							<div class="col"><h6>150/150 </h6> </div>
 							<div class="col"><h6>Mana: </h6></div>
 							<div class="col"><h6>40/40 </h6> </div>
 						</div>
@@ -56,13 +56,13 @@
 				<div class="col-sm-3 bg-warning  ">
 					<div class="container">
 						<div class="row ">
-							<div class="col"><h6>Vivian </h6> </div>
+							<div class="col"><h6>Viviane </h6> </div>
 							<div class="col"><h6>Alchimiste</h6></div>
 							<div class="col"><h6>Lvl : 39 </h6> </div>
 						</div>
 						<div class="row ">
-							<div class="col"><h6>HP: </h6> </div>
-							<div class="col"><h6>50/50 </h6> </div>
+							<div class="col"><h6>PV: </h6> </div>
+							<div class="col"><h6>120/120 </h6> </div>
 							<div class="col"><h6>Mana: </h6></div>
 							<div class="col"><h6>150/150 </h6> </div>
 						</div>
@@ -81,15 +81,28 @@
 							<div class="col"> <p > &nbsp;</p></div>
 						</div>
 						<div class="row ">
-							<div class="col"> <button type="button" class="btn btn-outline-light">Attaquer</button></div>
-							<div class="col"><button type="button" class="btn btn-outline-light">Jugement (DEG : 150) (MAN : 50)</button></div>
+							<div class="col">
+								<button type="button" class="btn btn-outline-light" id="btn_attaquer_Ash">Attaquer (DEG : 30)</button>
+								<button type="button" class="btn btn-outline-light" id="btn_targetFafnir_Ash" style="display: none;">Fafnir</button>
+							</div>
+								<div class="col">
+									<button type="button" class="btn btn-outline-light" id="btn_special_Ash">Jugement (DEG : 150) (MAN : 50)</button>
+									<button type="button" class="btn btn-outline-light" id="btn_targetLucia_Ash" style="display: none;">Lucia</button>
+								</div>
 						</div>
 						<div class="row ">
 							<div class="col"> <p > &nbsp;</p></div>
 						</div>
 						<div class="row ">
-							<div class="col"><button type="button" class="btn btn-outline-light">Parer</button> </div>
-							<div class="col"><button type="button" class="btn btn-outline-light">Repos</button></div>
+							<div class="col">
+								<button type="button" class="btn btn-outline-light" id="btn_parer_Ash">Parer <p>(DEF : x2)</p></button> 
+								<button type="button" class="btn btn-outline-light" id="btn_targetGhisarma_Ash" style="display: none;">Ghisarma</button>
+								<button type="button" class="btn btn-outline-light" id="btn_confirmer_Ash" style="display: none;">Confirmer</button>
+							</div>
+							<div class="col">
+								<button type="button" class="btn btn-outline-light" id="btn_repos_Ash">Repos <p>(REG : 10PV)</p></button>
+								<button type="button" class="btn btn-outline-light" id="btn_retour_Ash" style="display: none;">Retour</button>
+							</div>
 						</div>
 						<div class="row ">
 							<div class="col"> <p > &nbsp;</p></div>
@@ -102,15 +115,15 @@
 							<div class="col"> <p > &nbsp;</p></div>
 						</div>
 						<div class="row ">
-							<div class="col"> <button type="button" class="btn btn-outline-dark">Attaquer</button></div>
-							<div class="col"><button type="button" class="btn btn-outline-dark">Soin (MAN : 20)</button></div>
+							<div class="col"> <button type="button" class="btn btn-outline-dark" id="btn_attaquer_Penelo">Attaquer <p>(DEG : 10)</p></button></div>
+							<div class="col"><button type="button" class="btn btn-outline-dark" id="btn_special_Penelo">Soin <p>(REG : 40PV) (MAN : 20)</p></button></div>
 						</div>
 						<div class="row ">
 							<div class="col"> <p > &nbsp;</p></div>
 						</div>
 						<div class="row ">
-							<div class="col"><button type="button" class="btn btn-outline-dark">Parer</button> </div>
-							<div class="col"><button type="button" class="btn btn-outline-dark">Repos</button></div>
+							<div class="col"><button type="button" class="btn btn-outline-dark" id="btn_parer_Penelo">Parer <p>(DEF : x2)</p></button> </div>
+							<div class="col"><button type="button" class="btn btn-outline-dark" id="btn_repos_Penelo">Repos <p>(REG : 10PV)</p></button></div>
 						</div>
 						<div class="row ">
 							<div class="col"> <p > &nbsp;</p></div>
@@ -123,15 +136,15 @@
 							<div class="col"> <p > &nbsp;</p></div>
 						</div>
 						<div class="row ">
-							<div class="col"> <button type="button" class="btn btn-outline-light">Attaquer</button></div>
-							<div class="col"><button type="button" class="btn btn-outline-light">Déchireuse (MAN : 20)</button></div>
+							<div class="col"> <button type="button" class="btn btn-outline-light" id="btn_attaquer_Darwin">Attaquer <p>(DEG : 35)</p></button></div>
+							<div class="col"><button type="button" class="btn btn-outline-light" id="btn_special_Darwin">Déchireuse (DEG : 80) (MAN : 20)</button></div>
 						</div>
 						<div class="row ">
 							<div class="col"> <p > &nbsp;</p></div>
 						</div>
 						<div class="row ">
-							<div class="col"><button type="button" class="btn btn-outline-light">Parer</button> </div>
-							<div class="col"><button type="button" class="btn btn-outline-light">Repos</button></div>
+							<div class="col"><button type="button" class="btn btn-outline-light" id="btn_parer_Darwin">Parer <p>(DEF : x2)</p></button> </div>
+							<div class="col"><button type="button" class="btn btn-outline-light" id="btn_repos_Darwin">Repos <p>(REG : 10PV)</p></button></div>
 						</div>
 						<div class="row ">
 							<div class="col"> <p > &nbsp;</p></div>
@@ -144,15 +157,15 @@
 							<div class="col"> <p > &nbsp;</p></div>
 						</div>
 						<div class="row ">
-							<div class="col"> <button type="button" class="btn btn-outline-dark">Attaquer</button></div>
-							<div class="col"><button type="button" class="btn btn-outline-dark">Poison (MAN:35)</button></div>
+							<div class="col"> <button type="button" class="btn btn-outline-dark" id="btn_attaquer_Viviane">Attaquer (DEG : 15)</button></div>
+							<div class="col"><button type="button" class="btn btn-outline-dark" id="btn_special_Viviane">Poison <p>(DEG : 15/T) (MAN:35)</p></button></div>
 						</div>
 						<div class="row ">
 							<div class="col"> <p > &nbsp;</p></div>
 						</div>
 						<div class="row ">
-							<div class="col"><button type="button" class="btn btn-outline-dark">Parer</button> </div>
-							<div class="col"><button type="button" class="btn btn-outline-dark">Repos</button></div>
+							<div class="col"><button type="button" class="btn btn-outline-dark" id="btn_parer_Viviane">Parer <p>(DEF : x2)</p></button> </div>
+							<div class="col"><button type="button" class="btn btn-outline-dark" id="btn_repos_Viviane">Repos <p>(REG : 10PV)</p></button></div>
 						</div>
 						<div class="row ">
 							<div class="col"> <p > &nbsp;</p></div>
@@ -208,7 +221,7 @@
 						<div class="col"><h6>Lvl : 30 </h6> </div>
 					</div>
 					<div class="row ">
-						<div class="col"><h6>HP: </h6> </div>
+						<div class="col"><h6>PV: </h6> </div>
 						<div class="col"><h6>250/250 </h6> </div>
 						
 					</div>
@@ -224,7 +237,7 @@
 						<div class="col"><h6>Lvl : 35 </h6> </div>
 					</div>
 					<div class="row ">
-						<div class="col"><h6>HP: </h6> </div>
+						<div class="col"><h6>PV: </h6> </div>
 						<div class="col"><h6>400/400 </h6> </div>
 						
 					</div>
@@ -240,7 +253,7 @@
 						<div class="col"><h6>Lvl : 32 </h6> </div>
 					</div>
 					<div class="row ">
-						<div class="col"><h6>HP: </h6> </div>
+						<div class="col"><h6>PV: </h6> </div>
 						<div class="col"><h6>340/340 </h6> </div>
 						
 					</div>
@@ -248,7 +261,7 @@
 			</div>
 		</div>
 			
-
+		
 		
 	<script type="text/javascript" src="js/rpg.js"></script>
 </body>
