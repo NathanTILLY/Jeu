@@ -41,93 +41,91 @@ function afficher_aide(aide) {
 }
 
  /* ----------------------- ASH -------------------------------*/ 
- function ATKash(){
-	btn_attaquer_Ash.onclick = function ATKash()
-	{
-		btn_attaquer_Ash.style.display = "none";
-		btn_special_Ash.style.display = "none";
-		btn_parer_Ash.style.display = "none";
-		btn_repos_Ash.style.display = "none";
 
-		btn_targetFafnir_Ash.style.display = "block";
-		btn_targetLucia_Ash.style.display = "block";
-		btn_targetGhisarma_Ash.style.display = "block";
-		btn_retour_Ash.style.display = "block";
-
-		btn_targetFafnir_Ash.onclick = function()
-		{
-			PVfafnir = PVfafnir - 30;
-			btn_targetFafnir_Ash.style.display = "none";
-			btn_targetLucia_Ash.style.display = "none";
-			btn_targetGhisarma_Ash.style.display = "none";
-			btn_retour_Ash.style.display = "none";
-
-			PVFafnir.innerHTML = PVfafnir + "/250";
-
-			if (PVfafnir <= 0)
-			{
-				alert("Vous avez vaincu Fafnir");
-				spriteFafnir.style.display = "none";
-			}
-
-			tourAsh = true;
-			alert(tourAsh);
-
-		}
-		btn_targetLucia_Ash.onclick = function()
-		{
-			PVlucia = PVlucia - 30;
-			btn_targetFafnir_Ash.style.display = "none";
-			btn_targetLucia_Ash.style.display = "none";
-			btn_targetGhisarma_Ash.style.display = "none";
-			btn_retour_Ash.style.display = "none";
-
-
-			PVLucia.innerHTML = PVlucia + "/400"
-
-			if (PVlucia <= 0)
-			{
-				alert("Vous avez vaincu Lucia");
-				spriteFafnir.style.display = "none";
-			}
-
-			tourAsh = true;
-		}
-		btn_targetGhisarma_Ash.onclick = function()
-		{
-			PVghisarma = PVghisarma - 30;
-			btn_targetFafnir_Ash.style.display = "none";
-			btn_targetLucia_Ash.style.display = "none";
-			btn_targetGhisarma_Ash.style.display = "none";
-			btn_retour_Ash.style.display = "none";
-
-			PVGhisarma.innerHTML = PVghisarma + "/340";
-
-			if (PVghisarma <= 0)
-			{
-				alert("Vous avez vaincu Ghisarma");
-				spriteFafnir.style.display = "none";
-			}
-			tourAsh = true;
-		}
-		btn_retour_Ash.onclick = function()
-		{
-			btn_attaquer_Ash.style.display = "block";
-			btn_special_Ash.style.display = "block";
-			btn_parer_Ash.style.display = "block";
-			btn_repos_Ash.style.display = "block";
-
-			btn_targetFafnir_Ash.style.display = "none";
-			btn_targetLucia_Ash.style.display = "none";
-			btn_targetGhisarma_Ash.style.display = "none";
-			btn_retour_Ash.style.display = "none";
-		}
-			
-	} 
-
-}
-function SPCash()
+btn_attaquer_Ash.onclick = function ATKash()
 {
+	btn_attaquer_Ash.style.display = "none";
+	btn_special_Ash.style.display = "none";
+	btn_parer_Ash.style.display = "none";
+	btn_repos_Ash.style.display = "none";
+
+	btn_targetFafnir_Ash.style.display = "block";
+	btn_targetLucia_Ash.style.display = "block";
+	btn_targetGhisarma_Ash.style.display = "block";
+	btn_retour_Ash.style.display = "block";
+
+	btn_targetFafnir_Ash.onclick = function()
+	{
+		PVfafnir = PVfafnir - 30;
+		btn_targetFafnir_Ash.style.display = "none";
+		btn_targetLucia_Ash.style.display = "none";
+		btn_targetGhisarma_Ash.style.display = "none";
+		btn_retour_Ash.style.display = "none";
+
+		PVFafnir.innerHTML = PVfafnir + "/250";
+
+		if (PVfafnir <= 0)
+		{
+			alert("Vous avez vaincu Fafnir");
+			spriteFafnir.style.display = "none";
+		}
+
+		tourAsh = true;
+		alert(tourAsh);
+
+	}
+	btn_targetLucia_Ash.onclick = function()
+	{
+		PVlucia = PVlucia - 30;
+		btn_targetFafnir_Ash.style.display = "none";
+		btn_targetLucia_Ash.style.display = "none";
+		btn_targetGhisarma_Ash.style.display = "none";
+		btn_retour_Ash.style.display = "none";
+
+
+		PVLucia.innerHTML = PVlucia + "/400"
+
+		if (PVlucia <= 0)
+		{
+			alert("Vous avez vaincu Lucia");
+			spriteFafnir.style.display = "none";
+		}
+
+		tourAsh = true;
+	}
+	btn_targetGhisarma_Ash.onclick = function()
+	{
+		PVghisarma = PVghisarma - 30;
+		btn_targetFafnir_Ash.style.display = "none";
+		btn_targetLucia_Ash.style.display = "none";
+		btn_targetGhisarma_Ash.style.display = "none";
+		btn_retour_Ash.style.display = "none";
+
+		PVGhisarma.innerHTML = PVghisarma + "/340";
+
+		if (PVghisarma <= 0)
+		{
+			alert("Vous avez vaincu Ghisarma");
+			spriteFafnir.style.display = "none";
+		}
+		tourAsh = true;
+	}
+	btn_retour_Ash.onclick = function()
+	{
+		btn_attaquer_Ash.style.display = "block";
+		btn_special_Ash.style.display = "block";
+		btn_parer_Ash.style.display = "block";
+		btn_repos_Ash.style.display = "block";
+
+		btn_targetFafnir_Ash.style.display = "none";
+		btn_targetLucia_Ash.style.display = "none";
+		btn_targetGhisarma_Ash.style.display = "none";
+		btn_retour_Ash.style.display = "none";
+	}
+		
+} 
+
+
 	btn_special_Ash.onclick = function SPCash()
 	{
 		btn_attaquer_Ash.style.display = "none";
@@ -215,9 +213,8 @@ function SPCash()
 			btn_retour_Ash.style.display = "none";
 		}
 	} 
-}
-function PARash()
-{
+
+	
 	btn_parer_Ash.onclick = function PARash()
 	{
 		btn_attaquer_Ash.style.display = "none";
@@ -251,9 +248,8 @@ function PARash()
 			btn_confirmer_Ash.style.display = "none";
 		}
 	} 
-}
-function REPash()
-{
+
+
 	btn_repos_Ash.onclick = function REPash()
 	{
 		btn_attaquer_Ash.style.display = "none";
@@ -286,13 +282,12 @@ function REPash()
 			btn_confirmer_Ash.style.display = "none";
 		}
 	} 
-}
+	
 		
 	/* ----------------------- FIN ASH -------------------------------*/ 
 
 	/* ----------------------- PENELO --------------------------------*/
-function ATKpenelo()
-{
+
 	btn_attaquer_Penelo.onclick = function ATKpenelo()
 	{
 		btn_attaquer_Penelo.style.display = "none";
@@ -373,9 +368,8 @@ function ATKpenelo()
 			btn_retour_Penelo.style.display = "none";
 		}
 	} 
-}
-function SPCpenelo()
-{
+
+
 	btn_special_Penelo.onclick = function SPCpenelo()
 	{
 		btn_attaquer_Penelo.style.display = "none";
@@ -459,9 +453,8 @@ function SPCpenelo()
 			
 		}
 	} 
-}
-function PARpenelo()
-{
+
+
 	btn_parer_Penelo.onclick = function PARpenelo()
 	{
 		btn_attaquer_Penelo.style.display = "none";
@@ -496,9 +489,8 @@ function PARpenelo()
 			btn_confirmer_Penelo.style.display = "none";
 		}
 	} 
-}
-function REPpenelo()
-{
+
+
 	btn_repos_Penelo.onclick = function REPpenelo()
 	{
 		btn_attaquer_Penelo.style.display = "none";
@@ -532,14 +524,13 @@ function REPpenelo()
 			btn_confirmer_Penelo.style.display = "none";
 		}
 	} 
-}
+
 	
 
 	/* ----------------------- FIN PENELO --------------------------------*/
 
 	/* ----------------------- DARWIN --------------------------------*/
-function ATKdarwin()
-{
+
 	btn_attaquer_Darwin.onclick = function ATKdarwin()
 	{
 		btn_attaquer_Darwin.style.display = "none";
@@ -622,8 +613,7 @@ function ATKdarwin()
 		}
 	} 
 
-function SPCdarwin()
-{
+
 	btn_special_Darwin.onclick = function SPCdarwin()
 	{
 		btn_attaquer_Darwin.style.display = "none";
@@ -710,9 +700,8 @@ function SPCdarwin()
 			btn_retour_Darwin.style.display = "none";
 		}
 	} 
-}
-function PARdarwin()
-{
+
+
 	btn_parer_Darwin.onclick = function PARdarwin()
 	{
 		btn_attaquer_Darwin.style.display = "none";
@@ -749,9 +738,8 @@ function PARdarwin()
 			btn_confirmer_Darwin.style.display = "none";
 		}
 	} 
-}
-function REPdarwin()
-{
+
+
 	btn_repos_Darwin.onclick = function REPdarwin()
 	{
 		btn_attaquer_Darwin.style.display = "none";
@@ -785,15 +773,13 @@ function REPdarwin()
 			btn_confirmer_Darwin.style.display = "none";
 		}
 	} 
-}
-}
+
 	
 
 	/* ----------------------- FIN DARWIN --------------------------------*/
 
 	/* ----------------------- VIVIANE --------------------------------*/
-function ATKviviane()
-{
+
 	btn_attaquer_Viviane.onclick = function ATKviviane()
 	{
 		
@@ -879,7 +865,7 @@ function ATKviviane()
 			btn_retour_Viviane.style.display = "none";
 		}
 	} 
-}
+
 
 	btn_special_Viviane.onclick = function SPCviviane()
 	{
@@ -1313,14 +1299,18 @@ function ATKviviane()
 			PARviviane();
 			REPviviane();
 			
+			
+			alert(tourAsh); 
+			alert(tourDarwin); 
+			alert(tourPenelo);
+			alert(tourViviane);
 		}
-
+	
 		alert("est ce que j'en sors direct ?")
 		alert(tourAsh)
 	
 		if(tourAsh == true & tourPenelo == true & tourDarwin == true & tourViviane == true)
 		{
-			alert("rentre dans la boucle dégats monstgre")
 			AttaqueFafnir();
 			AttaqueLucia();
 			AttaqueGhisarma();
@@ -1329,11 +1319,6 @@ function ATKviviane()
 			tourPenelo = false
 			tourDarwin = false
 			tourViviane = false
-
-			alert(PVash);
-			alert(PVpenelo);
-			alert(PVdarwin);
-			alert(PVviviane);
 		}
 		if(tourPoisonFafnir >0)
 		{
@@ -1385,9 +1370,3 @@ function ATKviviane()
 	{
 		alert("YOU WIN");
 	}
-
-
-
-
-	
-	
