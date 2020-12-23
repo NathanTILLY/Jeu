@@ -26,30 +26,14 @@ var PVviviane = 120;
 var MANAviviane = 150;
 var VivianePare = false;
 
+
+
 function afficher_aide(aide) {
 	if (aide.style.display == "none") aide.style.display = "block";
 	else aide.style.display = "none";
 }
 
-var btn_attaquer_ash = document.getElementById(btn_attaquer_Ash);
-var btn_special_ash = document.getElementById(btn_special_Ash);
-var btn_parer_ash = document.getElementById(btn_parer_Ash);
-var btn_repos_ash = document.getElementById(btn_repos_Ash);
 
-var btn_attaquer_penelo = document.getElementById(btn_attaquer_Penelo);
-var btn_special_penelo = document.getElementById(btn_special_Penelo);
-var btn_parer_penelo = document.getElementById(btn_parer_Penelo);
-var btn_repos_penelo = document.getElementById(btn_repos_Penelo);
-
-var btn_attaquer_darwin = document.getElementById(btn_attaquer_Darwin);
-var btn_special_darwin = document.getElementById(btn_special_Darwin);
-var btn_parer_darwin = document.getElementById(btn_parer_Darwin);
-var btn_repos_darwin = document.getElementById(btn_repos_Darwin);
-
-var btn_attaquer_viviane = document.getElementById(btn_attaquer_Viviane);
-var btn_special_viviane = document.getElementById(btn_special_Viviane);
-var btn_parer_viviane = document.getElementById(btn_parer_Viviane);
-var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 
 
 /*while((PVlucia>0 | PVghisarma>0 | PVfafnir>0) & (PVash>0 | PVpenelo>0 | PVdarwin>0 | PVviviane>0) )
@@ -77,6 +61,9 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetGhisarma_Ash.style.display = "none";
 			btn_retour_Ash.style.display = "none";
 
+			PVFafnir.innerHTML = PVfafnir + "/250";
+
+
 		}
 		btn_targetLucia_Ash.onclick = function()
 		{
@@ -85,6 +72,9 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Ash.style.display = "none";
 			btn_targetGhisarma_Ash.style.display = "none";
 			btn_retour_Ash.style.display = "none";
+
+
+			PVLucia.innerHTML = PVlucia + "/400"
 		}
 		btn_targetGhisarma_Ash.onclick = function()
 		{
@@ -93,6 +83,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Ash.style.display = "none";
 			btn_targetGhisarma_Ash.style.display = "none";
 			btn_retour_Ash.style.display = "none";
+
+			PVGhisarma.innerHTML = PVghisarma + "/340";
 		}
 		btn_retour_Ash.onclick = function()
 		{
@@ -106,6 +98,7 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetGhisarma_Ash.style.display = "none";
 			btn_retour_Ash.style.display = "none";
 		}
+		
 	} 
 
 
@@ -131,6 +124,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetGhisarma_Ash.style.display = "none";
 			btn_retour_Ash.style.display = "none";
 
+			PVFafnir.innerHTML = PVfafnir + "/250";
+
 		}
 		btn_targetLucia_Ash.onclick = function()
 		{
@@ -141,6 +136,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Ash.style.display = "none";
 			btn_targetGhisarma_Ash.style.display = "none";
 			btn_retour_Ash.style.display = "none";
+
+			PVLucia.innerHTML = PVlucia + "/400"
 		}
 		btn_targetGhisarma_Ash.onclick = function()
 		{
@@ -151,6 +148,9 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Ash.style.display = "none";
 			btn_targetGhisarma_Ash.style.display = "none";
 			btn_retour_Ash.style.display = "none";
+
+
+			PVGhisarma.innerHTML = PVghisarma + "/340";
 		}
 		btn_retour_Ash.onclick = function()
 		{
@@ -166,7 +166,7 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 		}
 	} 
 
-
+	
 	btn_parer_Ash.onclick = function()
 	{
 		btn_attaquer_Ash.style.display = "none";
@@ -232,6 +232,7 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_confirmer_Ash.style.display = "none";
 		}
 	} 
+	
 		
 	/* ----------------------- FIN ASH -------------------------------*/ 
 
@@ -257,6 +258,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetGhisarma_Penelo.style.display = "none";
 			btn_retour_Penelo.style.display = "none";
 
+			PVFafnir.innerHTML = PVfafnir + "/250";
+
 		}
 		btn_targetLucia_Penelo.onclick = function()
 		{
@@ -265,6 +268,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Penelo.style.display = "none";
 			btn_targetGhisarma_Penelo.style.display = "none";
 			btn_retour_Penelo.style.display = "none";
+
+			PVLucia.innerHTML = PVlucia + "/400"
 		}
 		btn_targetGhisarma_Penelo.onclick = function()
 		{
@@ -273,6 +278,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Penelo.style.display = "none";
 			btn_targetGhisarma_Penelo.style.display = "none";
 			btn_retour_Penelo.style.display = "none";
+
+			PVGhisarma.innerHTML = PVghisarma + "/340";
 		}
 		btn_retour_Penelo.onclick = function()
 		{
@@ -429,6 +436,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 		}
 	} 
 
+	
+
 	/* ----------------------- FIN PENELO --------------------------------*/
 
 	/* ----------------------- DARWIN --------------------------------*/
@@ -453,6 +462,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetGhisarma_Darwin.style.display = "none";
 			btn_retour_Darwin.style.display = "none";
 
+			PVFafnir.innerHTML = PVfafnir + "/250";
+
 		}
 		btn_targetLucia_Darwin.onclick = function()
 		{
@@ -461,6 +472,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Darwin.style.display = "none";
 			btn_targetGhisarma_Darwin.style.display = "none";
 			btn_retour_Darwin.style.display = "none";
+
+			PVLucia.innerHTML = PVlucia + "/400"
 		}
 		btn_targetGhisarma_Darwin.onclick = function()
 		{
@@ -469,6 +482,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Darwin.style.display = "none";
 			btn_targetGhisarma_Darwin.style.display = "none";
 			btn_retour_Darwin.style.display = "none";
+
+			PVGhisarma.innerHTML = PVghisarma + "/340";
 		}
 		btn_retour_Darwin.onclick = function()
 		{
@@ -507,6 +522,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetGhisarma_Darwin.style.display = "none";
 			btn_retour_Darwin.style.display = "none";
 
+			PVFafnir.innerHTML = PVfafnir + "/250";
+			
 		}
 		btn_targetLucia_Darwin.onclick = function()
 		{
@@ -517,6 +534,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Darwin.style.display = "none";
 			btn_targetGhisarma_Darwin.style.display = "none";
 			btn_retour_Darwin.style.display = "none";
+
+			PVLucia.innerHTML = PVlucia + "/400"
 		}
 		btn_targetGhisarma_Darwin.onclick = function()
 		{
@@ -527,6 +546,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Darwin.style.display = "none";
 			btn_targetGhisarma_Darwin.style.display = "none";
 			btn_retour_Darwin.style.display = "none";
+
+			PVGhisarma.innerHTML = PVghisarma + "/340";
 		}
 		btn_retour_Darwin.onclick = function()
 		{
@@ -609,12 +630,15 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 		}
 	} 
 
+	
+
 	/* ----------------------- FIN DARWIN --------------------------------*/
 
 	/* ----------------------- VIVIANE --------------------------------*/
 
 	btn_attaquer_Viviane.onclick = function()
 	{
+		
 		btn_attaquer_Viviane.style.display = "none";
 		btn_special_Viviane.style.display = "none";
 		btn_parer_Viviane.style.display = "none";
@@ -633,6 +657,14 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetGhisarma_Viviane.style.display = "none";
 			btn_retour_Viviane.style.display = "none";
 
+			PVFafnir.innerHTML = PVfafnir + "/250";
+
+			alert(PVfafnir);
+			if (PVfafnir <= 0)
+			{
+				spriteFafnir.style.display = "none";
+			}
+			
 		}
 		btn_targetLucia_Viviane.onclick = function()
 		{
@@ -641,6 +673,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Viviane.style.display = "none";
 			btn_targetGhisarma_Viviane.style.display = "none";
 			btn_retour_Viviane.style.display = "none";
+
+			PVLucia.innerHTML = PVlucia + "/400"
 		}
 		btn_targetGhisarma_Viviane.onclick = function()
 		{
@@ -649,6 +683,8 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 			btn_targetLucia_Viviane.style.display = "none";
 			btn_targetGhisarma_Viviane.style.display = "none";
 			btn_retour_Viviane.style.display = "none";
+
+			PVGhisarma.innerHTML = PVghisarma + "/340";
 		}
 		btn_retour_Viviane.onclick = function()
 		{
@@ -793,6 +829,7 @@ var btn_repos_viviane = document.getElementById(btn_repos_Viviane);
 	} 
 
 	/* ----------------------- FIN VIVIANE --------------------------------*/
+
 
 
 
