@@ -16,7 +16,7 @@
 						</div>
 						<div class="row ">
 							<div class="col"><h6>PV: </h6> </div>
-							<div class="col"><h6>300/300 </h6> </div>
+							<div class="col"><h6 id="PV_ash">300/300 </h6> </div>
 							<div class="col"><h6>Mana: </h6></div>
 							<div class="col"><h6>50/50 </h6> </div>
 						</div>
@@ -27,11 +27,11 @@
 						<div class="row ">
 							<div class="col"><h6>Penelo </h6> </div>
 							<div class="col"><h6>Prêtresse</h6></div>
-							<div class="col"><h6>Lvl : 36 </h6> </div>
+							<div class="col"><h6 >Lvl : 36 </h6> </div>
 						</div>
 						<div class="row ">
 							<div class="col"><h6>PV: </h6> </div>
-							<div class="col"><h6>100/100 </h6> </div>
+							<div class="col"><h6 id="PV_penelo">100/100 </h6> </div>
 							<div class="col"><h6>Mana: </h6></div>
 							<div class="col"><h6>110/110 </h6> </div>
 						</div>
@@ -47,7 +47,7 @@
 						</div>
 						<div class="row ">
 							<div class="col"><h6>PV: </h6> </div>
-							<div class="col"><h6>150/150 </h6> </div>
+							<div class="col"><h6 id="PV_darwin">150/150 </h6> </div>
 							<div class="col"><h6>Mana: </h6></div>
 							<div class="col"><h6>40/40 </h6> </div>
 						</div>
@@ -62,7 +62,7 @@
 						</div>
 						<div class="row ">
 							<div class="col"><h6>PV: </h6> </div>
-							<div class="col"><h6>120/120 </h6> </div>
+							<div class="col"><h6 id="PV_viviane">120/120 </h6> </div>
 							<div class="col"><h6>Mana: </h6></div>
 							<div class="col"><h6>150/150 </h6> </div>
 						</div>
@@ -242,11 +242,11 @@
 					<img class ="guerrier" src="sprites/Guerrier.gif" id="spriteAsh">
 				</div>
 				<div class="col-sm-3" id="spriteFafnir">
-					<img class ="boss1" id="boss1" src="sprites/boss.gif"  onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss1'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss1'));">
+					<img class ="boss1"  src="sprites/boss.gif"  onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss1'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss1'));">
 				</div>
 				<div class="col-sm-3">
 					
-					<img class ="boss2" id="boss2" src="sprites/boss2.gif" id="spriteLucia" onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss2'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss2'));">
+					<img class ="boss2"  src="sprites/boss2.gif" id="spriteLucia" onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss2'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss2'));">
 			
 				</div>
 			</div>
@@ -264,7 +264,7 @@
 					<img class ="assassin" src="sprites/Assassin.gif" id="spriteDarwin">
 				</div>
 				<div class="col-sm-6">
-					<img class ="boss3" id="boss3" src="sprites/boss3.gif" id="spriteGhisarma"  onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss3'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss3'));">
+					<img class ="boss3"  src="sprites/boss3.gif" id="spriteGhisarma"  onmouseover="javascript: afficher_aide(document.getElementById('infobulleBoss3'));" onmouseout="javascript: afficher_aide(document.getElementById('infobulleBoss3'));">
 				</div>
 			</div>
 		</div>
@@ -317,7 +317,9 @@
 			</div>
 		</div>
 			
-		
+		<img class ="denouement"  src="maps/GAME OVER.png" style="display: none;">
+		<img class ="denouement"  src="maps/VICTOIRE.png" style="display: none;">
+
 		
 	<script type="text/javascript" src="js/rpg.js"></script>
 </body>
